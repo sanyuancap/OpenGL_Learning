@@ -31,7 +31,7 @@ int main( void )
 
 
 	// Open a window and create its OpenGL context
-	window = glfwCreateWindow( 1024, 768, "Tutorial 03 - Matrices", NULL, NULL);
+	window = glfwCreateWindow( 640, 320, "Tutorial 03 - Matrices", NULL, NULL);
 	if( window == NULL ){
 		fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
 		glfwTerminate();
@@ -81,7 +81,7 @@ int main( void )
 		 1.0f, -1.0f, 0.0f,
 		 0.0f,  1.0f, 0.0f,
 	};
-	static const GLushort g_element_buffer_data[] = { 0, 1, 2 };
+//	static const GLushort g_element_buffer_data[] = { 0, 1, 2 };
 
 	GLuint vertexbuffer;
 	glGenBuffers(1, &vertexbuffer);
